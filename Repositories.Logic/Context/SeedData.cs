@@ -1,7 +1,6 @@
-﻿using Repositories.WebAppMvc.Models;
-using System.Numerics;
+﻿using Repositories.Logic.Models;
 
-namespace Repositories.WebAppMvc.Context
+namespace Repositories.Logic.Context
 {
     public static class SeedData
     {

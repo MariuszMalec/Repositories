@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Repositories.WebAppMvc.Models;
+using Repositories.Logic.Models;
 
-namespace Repositories.WebAppMvc.Context
+namespace Repositories.Logic.Context
 {
     public class ApplicationDbContext : DbContext
     {

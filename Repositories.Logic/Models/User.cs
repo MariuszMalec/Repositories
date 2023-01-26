@@ -1,4 +1,4 @@
-﻿namespace Repositories.WebAppMvc.Models
+﻿namespace Repositories.Logic.Models
 {
     public class User
     {

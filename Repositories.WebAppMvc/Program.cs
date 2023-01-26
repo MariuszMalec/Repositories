@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Repositories.WebAppMvc.Context;
-using Repositories.WebAppMvc.Models;
-using Repositories.WebAppMvc.Repositories;
-using Repositories.WebAppMvc.Services;
+using Repositories.Logic.Context;
+using Repositories.Logic.Models;
+using Repositories.Logic.Repositories;
+using Repositories.Logic.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

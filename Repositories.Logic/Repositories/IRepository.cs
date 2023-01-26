@@ -1,4 +1,4 @@
-﻿namespace Repositories.WebAppMvc.Repositories
+﻿namespace Repositories.Logic.Repositories
 {
     public interface IRepository<T> where T : class
     {

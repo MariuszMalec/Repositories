@@ -1,6 +1,6 @@
-﻿using Repositories.WebAppMvc.Models;
+﻿using Repositories.Logic.Models;
 
-namespace Repositories.WebAppMvc.Data
+namespace Repositories.Logic.Data
 {
     public class UsersStorage
     {

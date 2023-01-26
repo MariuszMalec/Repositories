@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Repositories.WebAppMvc.Models;
-using Repositories.WebAppMvc.Repositories;
+using Repositories.Logic.Models;
+using Repositories.Logic.Repositories;
 
 namespace Repositories.WebAppMvc.Controllers
 {
