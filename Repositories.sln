@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.WebAppMvc", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.Logic", "Repositories.Logic\Repositories.Logic.csproj", "{DA07D9B8-801B-4F06-BAB5-7789483DA01D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.BlazorServerApp", "Repositories.BlazorServerApp\Repositories.BlazorServerApp.csproj", "{37DF1BD2-48F7-4054-84A4-F9F1D609194E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DA07D9B8-801B-4F06-BAB5-7789483DA01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA07D9B8-801B-4F06-BAB5-7789483DA01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA07D9B8-801B-4F06-BAB5-7789483DA01D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DF1BD2-48F7-4054-84A4-F9F1D609194E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DF1BD2-48F7-4054-84A4-F9F1D609194E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DF1BD2-48F7-4054-84A4-F9F1D609194E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DF1BD2-48F7-4054-84A4-F9F1D609194E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
