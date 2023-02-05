@@ -6,6 +6,7 @@ namespace Repositories.Logic.Context
     public class ApplicationDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public ApplicationDbContext(DbContextOptions options)
         : base(options)
         {

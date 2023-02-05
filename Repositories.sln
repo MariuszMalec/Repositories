@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.WebAppMvc", "Repositories.WebAppMvc\Repositories.WebAppMvc.csproj", "{872870F0-FECA-4990-B317-DAAB09F504AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.WebAppMvc", "Repositories.WebAppMvc\Repositories.WebAppMvc.csproj", "{872870F0-FECA-4990-B317-DAAB09F504AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.Logic", "Repositories.Logic\Repositories.Logic.csproj", "{DA07D9B8-801B-4F06-BAB5-7789483DA01D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.Logic", "Repositories.Logic\Repositories.Logic.csproj", "{DA07D9B8-801B-4F06-BAB5-7789483DA01D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories.BlazorServerApp", "Repositories.BlazorServerApp\Repositories.BlazorServerApp.csproj", "{37DF1BD2-48F7-4054-84A4-F9F1D609194E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.BlazorServerApp", "Repositories.BlazorServerApp\Repositories.BlazorServerApp.csproj", "{37DF1BD2-48F7-4054-84A4-F9F1D609194E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

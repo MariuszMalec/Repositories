@@ -16,6 +16,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(x => x.UseInMemoryDatabase("usersDb"));
 builder.Services.AddTransient<IRepository<User>, UserService>();
+builder.Services.AddTransient<IRepository<ApplicationUser>, ApplicationUserService>();
 
 var app = builder.Build();
 
@@ -24,6 +25,7 @@ using (var scope = app.Services.CreateScope())
 {
     var dataContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     SeedData.Seed(dataContext);
+    SeedData.SeedApplicationUsers(dataContext);
 }
 
 // Configure the HTTP request pipeline.

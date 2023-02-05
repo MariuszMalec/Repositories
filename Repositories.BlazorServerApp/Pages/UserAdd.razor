@@ -1,0 +1,74 @@
+﻿@page "/user/add"
+@page "/user/edit/{Id}"
+@using Repositories.Logic.Models;
+@using Repositories.Logic.Repositories;
+@inject IRepository<ApplicationUser> UserService
+@inject NavigationManager NavigationManager
+<h1>@Title User</h1>
+<hr />
+<EditForm Model="@user" OnValidSubmit="SaveUser">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label for="LastName" class="form-label">LastName</label>
+        <div class="col-md-4">
+            <InputText class="form-control" @bind-Value="user.LastName" />
+        </div>
+        <ValidationMessage For="@(() => user.LastName)" />
+    </div>
+    <div class="mb-3">
+        <label for="Address" class="form-label">Address</label>
+        <div class="col-md-4">
+            <InputText class="form-control" @bind-Value="user.Address" />
+        </div>
+        <ValidationMessage For="@(() => user.Address)" />
+    </div>
+    <div class="mb-3">
+        <label for="PhoneNumber" class="form-label">Cell No</label>
+        <div class="col-md-4">
+            <InputText class="form-control" @bind-Value="user.PhoneNumber" />
+        </div>
+        <ValidationMessage For="@(() => user.PhoneNumber)" />
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">E-mail</label>
+        <div class="col-md-4">
+            <InputText class="form-control" @bind-Value="user.Email" />
+        </div>
+        <ValidationMessage For="@(() => user.Email)" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button class="btn btn-light" @onclick="Cancel">Cancel</button>
+    </div>
+</EditForm>
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    protected string Title = "Add";
+    protected ApplicationUser user = new();
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id != null)
+        {
+            Title = "Edit";
+            user = await UserService.GetById(Id);
+        }
+    }
+    protected async Task SaveUser()
+    {
+        var check = UserService.GetAll().Result.ToList().Any(u => u.Id == Id);
+        if (check)
+        {
+            await UserService.Update(user.Id, user);
+        }
+        else
+        {
+            await UserService.Insert(user);
+        }
+        Cancel();
+    }
+    public void Cancel()
+    {
+        NavigationManager.NavigateTo("/applicationuserdetails");
+    }
+}
